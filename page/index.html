@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Document</title>
+</head>
+<body>
+   <img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3290379724,1971283725&fm=26&gp=0.jpg" alt="">
+   this is a test
+   <form action="/query" method="POST">
+      username: <input type="text" id="username" />
+      password: <input type="password" id="password" />
+      submit: <input type="submit" id="submit" />
+   </form>
+
+   <script src="./index.js"></script>
+   <script>
+      var username = document.getElementById('username');
+      var password = document.getElementById('password');
+      var submit = document.getElementById('submit');
+
+      // submit.onclick = function () {
+      //    var params = {
+      //       username: username.value,
+      //       password: password.value
+      //    }
+      //    var ajax = new XMLHttpRequest();
+      //    ajax.open('post', '/query');
+      //    ajax.send(JSON.stringify(params));
+      //    ajax.onreadystatechange = function () {
+      //       if(ajax.readyState == 4 && ajax.status == 200) {
+      //          // console.log( ajax.responseText );
+      //          // location.href = '/main.html'
+      //       }
+      //    }
+      // }
+   </script>
+</body>
+</html>
